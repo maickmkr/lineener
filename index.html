@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINE Energy - Soluções em Elétrica e Automação</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./jackson/IMG-20250505-WA0018.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        
+        .photo-gallery img {
+            transition: transform 0.3s ease;
+        }
+        
+        .photo-gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="bg-gray-900 text-white sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div>
+                <a href="#" class="text-2xl font-bold text-blue-400">LINE <span class="text-white">Energy</span></a>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-blue-400 transition">Início</a>
+                <a href="#about" class="hover:text-blue-400 transition">Sobre</a>
+                <a href="#services" class="hover:text-blue-400 transition">Serviços</a>
+                <a href="#gallery" class="hover:text-blue-400 transition">Galeria</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Contato</a>
+            </nav>
+            <button class="md:hidden focus:outline-none" id="mobile-menu-button">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-gray-800 w-full" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
+                <a href="#home" class="px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Início</a>
+                <a href="#about" class="px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Sobre</a>
+                <a href="#services" class="px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Serviços</a>
+                <a href="#gallery" class="px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Galeria</a>
+                <a href="#contact" class="px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero text-white py-20 md:py-32 flex items-center">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Soluções em Elétrica e Automação</h1>
+            <p class="text-xl md:text-2xl mb-8">Excelência técnica e compromisso com resultados</p>
+            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-block">
+                Fale conosco
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Jackson Liandro</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 md:pr-10">
+                    <img src="./jackson/IMG-20250505-WA0201.jpg" alt="Jackson Liandro" class="rounded-full w-64 h-64 object-cover mx-auto shadow-lg border-4 border-white">
+                </div>
+                <div class="md:w-2/3">
+                    <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                        Com ampla experiência no setor de energia elétrica e automação industrial, Jackson Liandro lidera a LINE Energy com compromisso, competência e visão técnica. Sua trajetória inclui a execução de complexos projetos industriais, desenvolvendo soluções customizadas que garantem eficiência energética e segurança operacional.
+                    </p>
+                    <p class="text-gray-700 mb-6 text-lg leading-relaxed">
+                        Especialista em sistemas de controle e automação, Jackson possui formação técnica especializada e certificações que comprovam sua capacidade técnica para liderar projetos de alta complexidade. Seu trabalho é pautado pela excelência, atendendo rigorosamente às normas técnicas e padrões de qualidade internacionais.
+                    </p>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="https://www.instagram.com/line_energys/" target="_blank" class="bg-pink-600 hover:bg-pink-700 text-white p-3 rounded-full transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:line.energy3@gmail.com" class="bg-red-500 hover:bg-red-600 text-white p-3 rounded-full transition">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://wa.me/558791661293" target="_blank" class="bg-green-500 hover:bg-green-600 text-white p-3 rounded-full transition">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nossos Serviços</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Soluções completas em elétrica industrial, automação e projetos especializados</p>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-lg border border-gray-100">
+                    <img src="./jackson/IMG-20250505-WA0163.jpg" alt="Projeto luminotécnico" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Execução de projeto luminotécnico</h3>
+                        <p class="text-gray-600">Desenvolvemos projetos luminotécnicos eficientes que combinam funcionalidade, economia energética e design, adequados a cada tipo de ambiente e necessidade.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-lg border border-gray-100">
+                    <img src="./jackson/IMG-20250505-WA0164.jpg" alt="Infraestrutura elétrica para motores" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Infraestrutura elétrica para ligação de motores</h3>
+                        <p class="text-gray-600">Implementação completa da infraestrutura necessária para operação segura e eficiente de motores elétricos industriais de diversos portes e aplicações.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-lg border border-gray-100">
+                    <img src="./jackson/IMG-20250505-WA0166.jpg" alt="Painel elétrico industrial" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Montagem de painel elétrico industrial</h3>
+                        <p class="text-gray-600">Fabricação e montagem de quadros elétricos industriais seguindo rigorosamente as normas técnicas e de segurança, utilizando componentes de alta qualidade.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-lg border border-gray-100">
+                    <img src="./jackson/IMG-20250505-WA0166.jpg" alt="Comissionamento de quadro industrial" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Comissionamento de quadro industrial</h3>
+                        <p class="text-gray-600">Procedimentos completos de testes, verificações e ajustes finais para garantir o perfeito funcionamento dos sistemas elétricos antes da entrega ao cliente.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-lg border border-gray-100">
+                    <img src="./jackson/IMG-20250505-WA0167.jpg" alt="Manutenção especializada" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Manutenção especializada em central de comando de motores</h3>
+                        <p class="text-gray-600">Serviços técnicos especializados para diagnóstico, reparo e manutenção preventiva e corretiva em centrais de comando de motores industriais.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-lg border border-gray-100">
+                    <img src="./jackson/IMG-20250505-WA0168(1).jpg" alt="Infraestrutura elétrica industrial" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Montagem de infraestrutura elétrica industrial</h3>
+                        <p class="text-gray-600">Projeto executivo e instalação completa da infraestrutura elétrica para indústrias, incluindo eletrocalhas, conduítes, cabos e todos os componentes necessários.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 7 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-lg border border-gray-100">
+                    <img src="./jackson/IMG-20250505-WA0169 (1).jpg" alt="Manutenção preventiva" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Manutenção preventiva em painéis elétricos</h3>
+                        <p class="text-gray-600">Programas de manutenção preventiva personalizados para evitar falhas e prolongar a vida útil dos equipamentos, reduzindo custos operacionais.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 8 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-lg border border-gray-100">
+                    <img src="./jackson/IMG-20250505-WA0170.jpg" alt="Projetos para câmara fria" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Projetos elétricos especializados para câmara fria</h3>
+                        <p class="text-gray-600">Soluções elétricas específicas para ambientes de refrigeração, considerando características especiais como umidade, baixas temperaturas e requisitos de segurança.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 9 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-lg border border-gray-100">
+                    <img src="./jackson/IMG-20250505-WA0171.jpg" alt="Projetos elétricos diversos" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Projetos elétricos industriais, comerciais e residenciais</h3>
+                        <p class="text-gray-600">Elaboração completa de projetos elétricos para diferentes segmentos, atendendo às normas técnicas e garantindo segurança, eficiência energética e funcionalidade.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 10 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-lg border border-gray-100">
+                    <img src="./jackson/IMG-20250505-WA0172.jpg" alt="Infraestrutura de baixa tensão" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Infraestrutura elétrica para instalações de baixa tensão</h3>
+                        <p class="text-gray-600">Implementação de sistemas completos de distribuição elétrica em baixa tensão, com componentes de qualidade e instalação profissional.</p>
+                    </div>
+                </div>
+            
+              <!-- Service 11 -->
+                <div class="service-card bg-white rounded-lg overflow-hidden shadow-lg border border-gray-100">
+                    <img src="./jackson/IMG_20250403_174703.jpg" alt="Infraestrutura de baixa tensão" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800">Energia Solar </h3>
+                        <p class="text-gray-600">nstalação de sistemas fotovoltaicos para geração de energia limpa e redução de custos..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nossos Projetos</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Conheça nosso trabalho através desses registros</p>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="photo-gallery grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Gallery Photos (replace with your actual project photos) -->
+                <img src="./jackson/IMG-20250607-WA0038.jpg" alt="Projeto eléctrico" class="w-full h-48 object-cover rounded-lg shadow-md">
+                <img src="./jackson/IMG-20250607-WA0029.jpg" alt="Painel industrial" class="w-full h-48 object-cover rounded-lg shadow-md">
+                <img src="./jackson/IMG-20250505-WA0007.jpg" alt="Montagem eléctrica" class="w-full h-48 object-cover rounded-lg shadow-md">
+                <img src="./jackson/IMG-20250607-WA0036.jpg" alt="Infraestrutura industrial" class="w-full h-48 object-cover rounded-lg shadow-md">
+                <img src="./jackson/IMG-20250607-WA0030.jpg" alt="Comissionamento" class="w-full h-48 object-cover rounded-lg shadow-md">
+                <img src="./jackson/IMG-20250607-WA0031.jpg" alt="Manutenção preventiva" class="w-full h-48 object-cover rounded-lg shadow-md">
+                <img src="./jackson/IMG-20250505-WA0000.jpg" alt="Projeto residencial" class="w-full h-48 object-cover rounded-lg shadow-md">
+                <img src="./jackson/IMG_20250530_160906.jpg" alt="Automação industrial" class="w-full h-48 object-cover rounded-lg shadow-md">
+            </div>
+            
+            <div class="text-center mt-10">
+                <p class="text-gray-600 mb-4">Acompanhe mais do nosso trabalho em nosso Instagram</p>
+                <a href="https://www.instagram.com/line_energys/" target="_blank" class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-2 px-6 rounded-full inline-flex items-center transition">
+                    <i class="fab fa-instagram mr-2"></i> @line_energys
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Entre em Contato</h2>
+                <p class="text-gray-300 max-w-2xl mx-auto">Estamos prontos para atender suas necessidades em elétrica e automação</p>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-10">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-6">Informações de Contato</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-blue-600 p-3 rounded-full mr-4 flex-shrink-0">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-medium">Email</h4>
+                                <a href="mailto:line.energy3@gmail.com" class="text-blue-400 hover:underline">line.energy3@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-500 p-3 rounded-full mr-4 flex-shrink-0">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-medium">WhatsApp</h4>
+                                <a href="https://wa.me/558791661293" target="_blank" class="text-blue-400 hover:underline">(87) 9166-1293</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-pink-600 p-3 rounded-full mr-4 flex-shrink-0">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-medium">Instagram</h4>
+                                <a href="https://www.instagram.com/line_energys/" target="_blank" class="text-blue-400 hover:underline">@line_energys</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-blue-400 p-3 rounded-full mr-4 flex-shrink-0">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-medium">Área de Atuação</h4>
+                                <p class="text-gray-300">Petrolina-PE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-6">Envie uma Mensagem</h3>
+                    
+                    <form id="contactForm" class="space-y-4">
+                        <div>
+                            <label for="name" class="block mb-1">Nome</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block mb-1">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block mb-1">Telefone</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block mb-1">Mensagem</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 rounded bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        
+                        <button type="button" onclick="sendMessage()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded transition duration-300 w-full">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="#" class="text-2xl font-bold text-blue-400">LINE <span class="text-white">Energy</span></a>
+                    <p class="mt-2">Excelência em soluções elétricas e automação</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="https://www.instagram.com/line_energys/" target="_blank" class="text-xl hover:text-pink-400 transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:line.energy3@gmail.com" class="text-xl hover:text-red-400 transition">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/558791661293" target="_blank" class="text-xl hover:text-green-400 transition">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-6 pt-6 text-center text-sm">
+                <p>&copy; 2023 LINE Energy. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking a link
+        const mobileLinks = document.querySelectorAll('#mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+        
+        // Form submission simulation
+        function sendMessage() {
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const message = document.getElementById('message').value.trim();
+            
+            if (name === '' || email === '' || message === '') {
+                alert('Por favor, preencha todos os campos obrigatórios.');
+                return;
+            }
+            
+            alert(`Obrigado pela mensagem, ${name}! Entraremos em contato em breve.`);
+            document.getElementById('contactForm').reset();
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
